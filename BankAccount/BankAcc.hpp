@@ -1,3 +1,6 @@
+#ifndef BANKACC_HPP
+#define BANKACC_HPP
+
 #include <iostream>
 using namespace std;
 
@@ -42,3 +45,5 @@ bool BankAcc::withdrawal(double amount) {
 void BankAcc::print() {
     cout << endl << "Account Number: " << accNumber << " balance: " << balance << endl;
 }
+
+#endif // !BANKACC_HPP
