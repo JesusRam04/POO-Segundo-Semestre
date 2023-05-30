@@ -14,9 +14,9 @@ public:
     double getBalance() { return balance; }
     void setBalance(double b) { balance = b; }
     void deposit(double amount);
-    bool withdrawal(double amount); // it has to be overridden in Commission Bank
+    virtual bool withdrawal(double amount); // it has to be overridden in Commission Bank
 
-    void print(); // it has to be overridden in the Commission Bank Account class
+    virtual void print(); // it has to be overridden in the Commission Bank Account class
 protected:
     int accNumber;
     double balance;
