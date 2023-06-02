@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+using namespace std;
+
+#ifndef ANIMAL_HPP
+#define ANIMAL_HPP
 
 class Animal
 {
@@ -21,3 +25,5 @@ int Animal::calculateAge()
 {
     return 2023 - birthYear;
 }
+
+#endif // ANIMAL_HPP
