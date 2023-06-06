@@ -21,7 +21,7 @@ public:
     Quadratic operator*(int iValue);
     void operator+=(Quadratic ec2);
     bool operator==(Quadratic ec2);
-    void operator++();
+    Quadratic operator++();
 private:
     int iCoefA, iCoefB, iCoefC;
 };
@@ -93,6 +93,7 @@ bool Quadratic::operator==(Quadratic ec2) {
     }
 }
 
-void Quadratic::operator++() {
+Quadratic Quadratic::operator++() {
     iCoefC++;
+    return *this;
 }

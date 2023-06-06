@@ -93,8 +93,7 @@ int main()
     cout << "=== Apply ++ to Equation 1 " << endl;
     cout << "Equation 1 : " ;
     ec1.show();
-    ecRes = ec1;
-    ++ecRes;
+    ecRes = ++ec1;
     cout << "Result : ";
     ecRes.show();
     cout << "Equation 1 : " ;
